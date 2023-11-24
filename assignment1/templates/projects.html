@@ -1,0 +1,13 @@
+<table border="1">
+    <tr>
+        <th>project_name</th>
+        <th>User</th>
+    </tr>
+    {% for project in all_projects %}
+    <tr>
+        <td><a href="{% url 'show_user' project.id %}">{{project.title}}</a></td>
+        <td>None</td>
+    </tr>
+    {% endfor %}
+</table>
+
